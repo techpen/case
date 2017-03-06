@@ -1,0 +1,517 @@
+/**************************************************************************************************
+initialize
+************/
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+    padding: 0px;
+}
+ul, ol, li  {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+dl, dt, dd {
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+}
+form, fieldset, input, textarea, select, option, label {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+}
+fieldset, a img {
+    border: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+table, th, td, th {
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+}
+p, pre, address, blockquote, caption, cite, code {
+    margin: 0px;
+    padding: 0px;
+}
+pre, code {
+    font-weight: normal;
+    font-style: normal;
+}
+hr, .nodisp {
+    display: none;
+}
+fieldset, img {
+    border: 0;
+}
+h1, h2, h3, h4, h5,  h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+sup {
+    vertical-align:text-top;
+}
+sub {
+    vertical-align:text-bottom;
+}
+abbr, acronym {
+    border:0;
+    font-variant:normal;
+}
+input, textarea, select {
+    *font-size:100%;
+}
+
+/* ********
+ * Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+**/
+audio, canvas, video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/**********
+ * Addresses styling for `hidden` attribute not present in IE 7/8/9, Firefox 3,and Safari 4.
+* Known issue: no IE 6 support.
+**/
+[hidden] {
+    display: none;
+}
+object {
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: auto;
+    height: auto;
+}
+
+/**************************************************************************************************
+general
+************/
+body {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    color: #333;
+    font-family: "Microsoft Yahei", Arial, Helvetica;
+    background-color: #ececec;
+    background-image: url("../images/header_line.png");
+    background-repeat: no-repeat;
+    background-position: center 710px;
+}
+html, body {
+    height: 100%;	/*伸展元素到窗口高度*/
+}
+*html body {
+    font-size: 0.75em;	/*IE7 HACK*/
+}
+
+/**************************************************************************************************
+clearfix
+************/
+.clearfix {
+    display: inline-table;
+    min-height: 1%;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+}
+/* For mac ie */
+* html .clearfix {
+    height: 1%;
+}
+.clearfix {
+    display: block;
+}
+/* End of mac ie */
+
+/**************************************************************************************************
+text decoration
+************/
+/*link decoration*/
+a {
+    text-decoration: none;
+}
+a:link,a:active,a:visited  {
+    color: #333;
+    text-decoration: none;
+}
+a:hover {
+    color: #D6000F;
+    text-decoration: none;
+}
+
+/*link-block*/
+a.link-block {
+    display: block;
+}
+a.link-block:hover {
+    display: block;
+}
+
+/*link-color*/
+a.link-red-layout {
+    color: red;
+}
+a.link-red-layout:hover {
+    color: red;
+}
+
+/**************************************************************************************************
+container
+************/
+#container {
+    width: 100%;
+    margin: 0 auto;
+
+    font-size: 18px;
+    line-height: 26px;
+    text-align: left;
+}
+
+/*
+header
+************/
+#header {
+    width: 1200px;
+    height: 710px;
+    margin: 0 auto;
+    background-color: white;
+    background-image: url("../images/header_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+#header .logo {
+    margin-bottom: 71px;
+}
+.header-box {
+    background-color: white;
+}
+/*
+nav
+************/
+#nav {
+    /*主*/
+}
+
+/*
+wrapper
+************/
+#wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    *position:relative; /*for ie6/7*/
+}
+.topimage {
+    margin-bottom: 15px;
+}
+.main {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 1044px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: white;
+}
+.sidebar {
+    width: 20%;
+    min-height: 600px;
+    border: solid 1px #C2CCD1;
+    overflow: hidden;
+}
+.content {
+    width: 75%;
+    min-height: 600px;
+    border: solid 1px #C2CCD1;
+    overflow: hidden;
+}
+
+/*
+footer
+************/
+#footer {
+    position: relative;
+    width: 1044px;
+    height: 280px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #42bcef;
+}
+#footer img {
+    vertical-align: middle;
+}
+#footer .left {
+    float: left;
+    width: 130px;
+    line-height: 280px;
+    margin-left: 88px;
+}
+#footer .right {
+    float: left;
+    width: 450px;
+    margin-left: 60px;
+    padding-top: 108px;
+    font-size: 30px;
+    color: white;
+}
+#footer .right p {
+}
+#footer .right span {
+    width: 28px;
+    height: 5px;
+    display: inline-block;
+    background-color: white;
+}
+
+/**************************************************************************************************
+default
+************/
+small {
+    font-size: 75%;
+}
+strong {
+    font-weight: 700;
+}
+
+/**************************************************************************************************
+special
+************/
+.max-width {
+    max-width: 1200px;
+    _width:expression(document.body.clientWidth > 1200px ? "1200px" : "auto");	/* sets max-width for IE */
+}
+.min-height{
+    min-height: 500px;
+    _height: expression(this.scrollHeight < 500px ? "500px" : "auto");
+}
+
+/**************************************************************************************************
+common
+************/
+/* float **********/
+.fl {
+    display: inline-block;
+    float: left;
+}
+.fr {
+    display: inline-block;
+    float: right;
+}
+.fl, .fr {
+    display: inline;
+}
+
+/* font-size **********/
+.fs-h1 {
+
+}
+
+h3 {
+    height: 50px;
+    margin-bottom: 18px;
+    font-size: 24px;
+    line-height: 50px;
+}
+h3 span {
+    height: 50px;
+    padding-left: 52px;
+    padding-right: 15px;
+    color: white;
+    background-color: #fbb03b;
+    display: inline-block;
+}
+
+/* 边距 **********/
+.pad-t-a {
+    padding-top: 114px;
+}
+.pad-t-b {
+    padding-top: 56px;
+}
+.pad-t-c {
+    padding-top: 100px;
+    padding-bottom: 58px;
+}
+.pad-t-d {
+    padding-top: 115px;
+}
+.pad-tit-a {
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.mar-b-a {
+    margin-bottom: 50px;
+}
+
+.pad-h2 {
+    padding-top: 56px;
+}
+.pad-dmp {
+    padding-top: 38px;
+    padding-bottom: 25px;
+}
+.mar-line-b {
+    margin-bottom: 25px;
+}
+
+.line-h-a {
+    line-height: 30px;
+}
+
+/*color*/
+.color-yellow-a {
+    color: #fbb03b;
+}
+#goTop {
+    position: fixed;
+    bottom: 80px;
+    left: 550px;
+    margin-left: 50%;
+    _position: absolute;
+    _right: auto;
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    color: black;
+}
+
+/**************************************************************************************************
+contact
+************/
+.head-top {
+    width: 100%;
+    overflow: hidden;
+}
+.head-l {
+    float: left;
+    width: 150px;
+    padding: 150px 0 0 218px;
+    text-align: center;
+}
+.head-r {
+    float: right;
+    width: 600px;
+    padding-top: 158px;
+    padding-right: 38px;
+}
+.head-r span {
+    font-size: 24px;
+    color: #41bcee;
+}
+#header .login {
+    margin-bottom: 5px;
+}
+.header-tit {
+    width: 100%;
+    margin-bottom: 34px;
+}
+.header-tag {
+    width: 1044px;
+    margin: 0 auto;
+    padding-top: 120px;
+    text-align: center;
+}
+
+/*main*/
+.main-box {
+    width: 100%;
+    overflow: hidden;
+}
+.main-box i {
+    margin-right: 5px;
+    font-style: normal;
+}
+.cont-box {
+    padding-left: 52px;
+    padding-right: 52px;
+}
+.header-bg-line {
+    background-image: url("../images/header_line_b.jpg");
+    background-position: center 0;
+    background-repeat: no-repeat;
+}
+.main-bg-m {
+    background-image: url("../images/main_bg_m.png");
+    background-position: right 0px;
+    background-repeat: no-repeat;
+}
+.main-bg-list {
+    background-image: url("../images/main_bg_list.png");
+    background-position: 670px 718px;
+    background-repeat: no-repeat;
+}
+.main-dz {
+    margin-bottom: 125px;
+    padding: 0 52px;
+    overflow: hidden;
+}
+.main-dz .left {
+    float: left;
+    margin-right: 70px;
+}
+.main-dz .right {
+    float: right;
+}
+.main-dsp {
+    margin-bottom: 100px;
+    padding: 0 52px;
+    overflow: hidden;
+}
+.main-dsp i {
+    margin-right: 5px;
+    font-style: normal;
+}
+.main-dsp .left {
+    width: 50%;
+    float: left;
+}
+.main-dsp .left p {
+    margin-bottom: 10px;
+}
+.main-dsp .right {
+    float: right;
+    text-align: right;
+    padding-top: 14px;
+}
+.main-tit {
+    margin-bottom: 35px;
+}
+.main-dsp-list {
+    width: 50%;
+    margin-bottom: 150px;
+    float: left;
+    text-align: left;
+}
+.main-dsp-list .img-a {
+    margin-bottom: 56px;
+}
+.main-dsp-list .img-b {
+    margin-bottom: 40px;
+}
+
+.copyright {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 1044px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+.copyright p {
+    margin-bottom: 5px;
+}
