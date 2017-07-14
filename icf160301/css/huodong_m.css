@@ -1,0 +1,248 @@
+/*layout
+*************************************************************************************************/
+/*reset*/
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1em;
+}
+ul, ol, li  {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+dl, dt, dd {
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+}
+form, fieldset, input, textarea, select, option, label {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+}
+fieldset, a img {
+    border: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+table, th, td, th {
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+}
+p, pre, address, blockquote, caption, cite, code {
+    margin: 0px;
+    padding: 0px;
+}
+pre, code {
+    font-weight: normal;
+    font-style: normal;
+}
+hr, .nodisp {
+    display: none;
+}
+img {
+    border: none;
+    vertical-align: bottom;
+}
+
+/*clearfix
+*************************************************************************************************/
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+}
+.clearfix {
+    display: inline-table;
+    min-height: 1%;
+}
+
+/*text decoration
+*************************************************************************************************/
+a {
+    text-decoration: none;
+}
+a:link,a:active,a:visited  {
+    color: #5d5c62;
+    text-decoration: none;
+}
+a:hover {
+    color: #5d5c62;
+    text-decoration: none;
+}
+
+/*body
+*************************************************************************************************/
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    color: #231815;
+    line-height: 24px;
+    text-align: center;
+    font-family: 'Microsoft YaHei', Arial, Helvetica;
+}
+html, body {
+    height: 100%;
+}
+*html body {
+    font-size: 0.75em;
+}
+
+/*container
+*************************************************************************************************/
+#container {
+    max-width: 640px;
+    _width:expression(document.body.clientWidth > 640px ? "640px" : "auto");	/* sets max-width for IE */
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1em;
+    text-align: left;
+    position: relative;
+
+}
+#header {
+    width: 100%;
+}
+#header img {
+    width: 100%;
+}
+.topimage {
+    width: 100%;
+}
+.topimage img {
+    width: 100%;
+}
+.main {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#footer {
+    max-width: 640px;
+    _width:expression(document.body.clientWidth > 640px ? "640px" : "auto");	/* sets max-width for IE */
+    width: 92%;
+    margin: 0 auto 5%;
+}
+#footer img {
+    width: 100%;
+}
+
+/*contact
+*************************************************************************************************/
+.hd-nav {
+    width: 100%;
+}
+.hd-nav li {
+    width: 100%;
+}
+.hd-nav li img {
+    width: 100%;
+}
+
+.hd-cmp-tit {
+    position: absolute;
+    left: 0;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+.hd-cj-btn {
+    width: 30%!important;
+}
+
+
+/**************************************************************************************************
+*cmp
+*******/
+/*抽奖*/
+.opacity-bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1001;
+    -moz-opacity: 0.5;
+    opacity: .50;
+    filter: alpha(opacity=50);
+}
+.choujiang-close {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1002;
+    -moz-opacity: .0;
+    opacity: .0;
+    filter: alpha(opacity=0);
+}
+
+.choujiang {
+    display: none;
+    width: 92%;
+    margin: 0 auto;
+    position: fixed;
+    top: 30%;
+    *top: 31%;
+    left: 0;
+    *left: 28%;
+    right: 0;
+    z-index: 1002;
+}
+.choujiang img {
+    width: 100%;
+}
+.choujiang-top {
+    position: relative;
+    width: 100%;
+    color: white;
+}
+.choujiang-center {
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    background-image: url(../images/img_mobile/choujiang_center.png);
+    background-position: top center;
+    background-repeat: repeat-y;
+    background-size: 100% 12px;
+}
+.choujiang-botm {
+    width: 100%;
+    height: 10px;
+    background-image: url(../images/img_mobile/choujiang_botm.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 100% 10px;
+}
+.choujiang-center p {
+    margin-bottom: 15px;
+    letter-spacing: 8px;
+}
+/*end*/
+
+.choujiang-tips {
+    width: 65%;
+    margin: 0 auto;
+    overflow: hidden;
+}

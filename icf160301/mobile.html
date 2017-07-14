@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+        <head>
+            <meta charset="utf-8"/>
+            <title>车风 - G10活动</title>
+            <meta name="Keywords" content="G10活动">
+            <meta name="description" content="车风-真正透明底价的购车商城,新车上市,贷款购车,4S店在线卖车。为您提供专业,透明,高效的购车服务和体验。">
+            <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+            <meta name="misapplication-tap-highlight" content="no">
+            <meta name="HandheldFriendly" content="true"/>
+            <meta name="MobileOptimized" content="320"/>
+            <link rel="shortcut icon" href="http://hd.ichefeng.com/static/favicon.ico" type="image/x-icon">
+
+            <link rel="stylesheet" href="css/huodong_m.css"/>
+            <script src="http://hdcdn.ichefeng.com/static/js/zepto.1.1.6.min.js"></script>
+
+            <!-- start:baidu -->
+            <!--<script src="//hm.baidu.com/hm.js?a6add1f27c4f7bde22cba3b63d42a01f"></script>-->
+            <!--<script>-->
+                <!--var _hmt = _hmt || [];-->
+                <!--(function() {-->
+                    <!--var hm = document.createElement("script");-->
+                    <!--hm.src = "//hm.baidu.com/hm.js?a6add1f27c4f7bde22cba3b63d42a01f";-->
+                    <!--var s = document.getElementsByTagName("script")[0];-->
+                    <!--s.parentNode.insertBefore(hm, s);-->
+                <!--})();-->
+            <!--</script>-->
+            <!-- end:baidu-->
+
+        </head>
+    <body>
+        <!-- start:container-->
+        <div id="container" class="clearfix">
+
+            <div class="topimage">
+                <img src="images/img_mobile/img_1.jpg" alt="topimage" />
+            </div>
+
+            <!-- start:main-->
+            <div class="main">
+
+                <ul class="hd-nav">
+                    <li><img src="images/img_mobile/img_2.jpg" alt="img" /> </li>
+                    <li><img src="images/img_mobile/img_3.jpg" alt="img" /> </li>
+                    <li><img src="images/img_mobile/img_4.jpg" alt="img" /> </li>
+                    <li>
+                        <a href="#" onclick="ShowDiv('MyDiv2','fade2')">
+                            <img src="images/img_mobile/img_5.jpg" alt="立即领取" />
+                        </a>
+                    </li>
+                    <li><img src="images/img_mobile/img_6.jpg" alt="img" /> </li>
+                    <li><img src="images/img_mobile/img_7.jpg" alt="img" /> </li>
+                    <li><img src="images/img_mobile/img_8.jpg" alt="img" /> </li>
+                    <li><img src="images/img_mobile/img_9.jpg" alt="img" /> </li>
+                    <li><img src="images/img_mobile/img_10.jpg" alt="img" /> </li>
+                    <li><img src="images/img_mobile/img_11.jpg" alt="img" /> </li>
+                    <li><img src="images/img_mobile/img_12.jpg" alt="img" /> </li>
+                </ul>
+
+            </div>
+            <!-- end:main-->
+
+        </div>
+        <!-- end:container-->
+
+        <!-- start:footer -->
+        <div id="footer">
+
+            <img src="http://hdcdn.ichefeng.com/static/images/hd_footer.jpg" alt="footer" />
+
+        </div>
+        <!-- end:footer -->
+
+        <!-- start:抽奖-->
+        <div id="fade2" class="opacity-bg" onclick="CloseDiv('MyDiv2','fade2')"></div>
+        <div id="MyDiv2" class="choujiang" onclick="CloseDiv('MyDiv2','fade2')">
+            <div class="choujiang-top">
+                <img src="images/img_mobile/choujiang_top.png" alt="img" />
+
+                <div class="hd-cmp-tit">
+                    敬请期待！
+                    <!-- 恭喜您获得一次抽奖机会！-->
+                    <!--未中奖文字： 很遗憾... -->
+                    <!--中交文字: 中奖啦！-->
+                </div>
+            </div>
+            <div class="choujiang-center">
+                <div class="choujiang-tips">
+                    <p>活动即将开始...</p>
+                    <!--<a href="#"><img src="images/img_mobile/choujiang_btn.png" alt="抽奖"  class="hd-cj-btn" /></a>-->
+                    <!--<p>立即抽奖赢取洗车年卡</p>-->
+                    <!--未中奖： <p>您没有抽到呢！</p> -->
+                    <!-- 中奖： <p>恭喜您</p><p>获得洗车年卡一张</p> -->
+                </div>
+            </div>
+            <div class="choujiang-botm"></div>
+        </div>
+        <!-- end:抽奖-->
+
+        <!-- start:cnzz -->
+        <div style="display:none">
+            <script src="http://s11.cnzz.com/z_stat.php?id=1255822080&amp;web_id=1255822080" language="JavaScript"></script>
+            <script src="http://c.cnzz.com/core.php?web_id=1255822080&amp;t=z" charset="utf-8" type="text/javascript"></script>
+            <a href="http://www.cnzz.com/stat/website.php?web_id=1255822080" target="_blank" title="站长统计">站长统计</a>
+        </div>
+        <!-- end:cnzz -->
+    </body>
+        <script src="js/layer_m.js"></script>
+        <script>
+            //赋值etag
+            $(document).ready(function(){
+                var name=window.location.search;
+
+                var etag=name.substr(name.lastIndexOf("etag"),name.length);
+
+                $("#container .hd-nav a").each(function (index) {
+                    var url = $(this).attr("href");
+                    if (url.indexOf('?') >= 0) {
+                        $(this).attr("href", url + "&" + etag);
+                    } else {
+                        $(this).attr("href", url + "?" + etag);
+                    }
+                });
+            });
+        </script>
+</html>

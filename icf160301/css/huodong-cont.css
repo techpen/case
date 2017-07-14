@@ -1,0 +1,172 @@
+/**************************************************************************************************
+*common
+*******/
+.main-bg {
+    background-color: #F9F9F9;
+}
+
+/**************************************************************************************************
+*content
+*******/
+.active-box {
+    width: 100%;
+}
+.active-main {
+    width: 1200px;
+    margin: 0 auto;
+}
+.active-bg-topimage {
+    height: 700px;
+    background-image: url(../images/topimage.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.active-bg-a {
+    height: 135px;
+    padding-top: 90px;
+    text-align: center;
+    background-image: url(../images/bg_1.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.active-bg-b {
+    height: 507px;
+    background-image: url(../images/text_2.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.active-bg-c {
+    height: 421px;
+    text-align: center;
+    background-image: url(../images/bg_2.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.active-bg-d {
+    height: 340px;
+    text-align: center;
+    background-image: url(../images/bg_3.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.active-bg-e {
+    height: 1508px;
+    text-align: center;
+    background-image: url(../images/bg_4.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.active-bg-f {
+    height: 1857px;
+    text-align: center;
+    background-image: url(../images/bg_5.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.active-bg-g {
+    height: 1545px;
+    text-align: center;
+    background-image: url(../images/bg_6.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.active-btn {
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+.active-btn p {
+    margin-bottom: 48px;
+}
+.active-h-a {
+    width: 1200px;
+    margin: 0 auto 90px;
+    padding-top: 90px;
+    text-align: center;
+}
+
+/**************************************************************************************************
+*cmp
+*******/
+/*抽奖*/
+.opacity-bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1001;
+    -moz-opacity: 0.5;
+    opacity: .50;
+    filter: alpha(opacity=50);
+}
+.choujiang-close {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1002;
+    -moz-opacity: .0;
+    opacity: .0;
+    filter: alpha(opacity=0);
+}
+
+.choujiang {
+    display: none;
+    width: 644px;
+    margin: 0 auto;
+    position: fixed;
+    top: 30%;
+    *top: 31%;
+    left: 0;
+    *left: 28%;
+    right: 0;
+    z-index: 1002;
+}
+.choujiang-top {
+    width: 644px;
+    height: 60px;
+    padding-top: 56px;
+    font-size: 30px;
+    color: white;
+    background-image: url(../images/choujiang_top.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.choujiang-center {
+    width: 644px;
+    overflow: hidden;
+    padding-top: 20px;
+    text-align: center;
+    background-image: url(../images/choujiang_center.png);
+    background-position: top center;
+    background-repeat: repeat-y;
+}
+.choujiang-botm {
+    width: 644px;
+    height: 41px;
+    background-image: url(../images/choujiang_botm.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+.choujiang-center p {
+    margin-bottom: 15px;
+    letter-spacing: 8px;
+}
+/*end*/
+
+.choujiang-tips {
+    width: 420px;
+    margin: 0 auto;
+    overflow: hidden;
+}
