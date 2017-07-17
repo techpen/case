@@ -1,5 +1,4 @@
-## <center><font face="微软雅黑" color="#DC143C">案例</font></center>
-> 案例地址： https://techpen.github.io/case/
+> URL： https://techpen.github.io/case/
 
 ## PC端
 > [上汽大众二手车交易平台](http://www.svwuc.com)
